@@ -1,0 +1,437 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.smallPadding {
+    padding: 10px;
+}
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+    display: none;
+    text-decoration: none;
+}
+.lock:hover .icon-lock {
+    display: inline;
+    text-decoration: none;
+}
+h2 {
+    height: 50%;
+    /*height: 300px;*/
+    position: center;
+    text-align: center;
+    font-size: 100px;
+}
+
+.portrait-image {
+    border: 3px solid white;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 50% 50%;
+    /*background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+.bg-image{
+    /* The image used */
+    background-image: url(assets/beach7comp.jpg);
+    filter: saturate(100%);
+    -webkit-filter: brightness(70%);
+    /* Add the blur effect */
+    height: 1000px;
+    /* Center and scale the image nicely */
+    /*background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed;
+    will-change: transform;
+}
+
+
+.blurred-img{
+    opacity: 100%;
+    /* The image used */
+    background-image: url(assets/beach7blurcomp.jpg);
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%) brightness(70%) grayscale(50%);
+    /* Add the blur effect */
+    height: 1000px;
+    /* Center and scale the image nicely */
+    /*background-position: inherit;
+    background-repeat: no-repeat;
+
+    padding: 0;
+    margin: 0;*/
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    will-change: transform;
+}
+
+.bg-text {
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    /*background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    /*border: 3px solid #f1f1f1;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.lr-centred {
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+
+.break {
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    font-size: 50px;
+    color: #232b2b;
+    height: 300px;
+}
+
+.uct-bg {
+    /* The image used */
+    background-image: url(assets/UCT_Panorama1comp.jpg);
+    padding: 0;
+    margin: 0;
+    /* Add the blur effect */
+    /*filter: blur(1px);
+    -webkit-filter: blur(1px);*/
+    height: 300px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: inherit;
+}
+
+.uct-text {
+    font-size: 100px;
+    position: absolute;
+    top: 185%;
+    /*top: 1370px;*/
+    left: 20%;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+.left-of-split {
+    left: 0;
+    text-align: center;
+}
+
+.right-of-split {
+    right: 0;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.image-centred {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.col-2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1;
+    padding: 30px;
+}
+
+.col-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1;
+    padding: 30px;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.med {
+    font-size: 19px;
+}
+
+.accolades {
+    background-image: url(assets/cliffnewcomp.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.break2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #232b2b;
+    height: 400px;
+
+}
+
+.accoladesText {
+    font-size: 100px;
+    position: absolute;
+    top: 2300px;
+    left: 5%;
+    color: white;
+}
+
+
+.achievements {
+    position: relative;
+    padding: 60px;
+
+}
+
+.break-courses {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #232b2b;
+    height: 150px;
+
+}
+
+.logo {
+    padding: 30px;
+}
+
+.logo a {
+    background: rgba(255, 255, 255, 0.1);
+    -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+    -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.logo a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    filter: contrast(110%);
+    filter: saturate(110%);
+    box-shadow: 2px 5px gray;
+    -webkit-box-shadow: 2px 5px gray;
+
+}
+
+.uctlogo {
+    padding: 30px;
+}
+
+.uctlogo a {
+    background: rgba(255, 255, 255, 0.1);
+    -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+    -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.uctlogo a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    filter: contrast(110%);
+    filter: saturate(110%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.centred-achievements {
+    text-align: center;
+    font-size: 20px;
+}
+
+.projects-bg {
+    /* The image used */
+    background-image: url(assets/mathinv.jpg);
+    padding: 0;
+    margin: 0;
+    /* Add the blur effect */
+    /*filter: blur(1px);
+    -webkit-filter: blur(1px);*/
+    height: 300px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.break-projects {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    /*color: #232b2b;*/
+    color: darkgray;
+    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.projects-div {
+    background-color: #383838;
+}
+
+.bottom-padding {
+    padding-bottom: 300px;
+
+}
+
+.ud-logo {
+    transform: scale(0.5);
+    height: 400px;
+}
+
+.ud-logo a {
+    background: rgba(255, 255, 255, 0.1);
+    -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+    -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.ud-logo a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    filter: contrast(110%);
+    filter: saturate(110%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.ud-title {
+    font-size: 50px;
+    padding-top: 100px;
+    color: white;
+}
+
+.ud-text {
+    padding-top: 100px;
+    color: white;
+}
+
+.avl-logo {
+    padding-top: 40px;
+    height: 350px;
+}
+
+.avl-logo a {
+    background: rgba(255, 255, 255, 0.1);
+    -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+    -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.avl-logo a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    filter: contrast(110%);
+    filter: saturate(110%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.avl-text {
+    padding-top: 50px;
+    height: 500px;
+    color: white;
+}
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <script>
+        $(window).scroll(function() {
+            // Get scroll position
+            var s = $(window).scrollTop(),
+                // scroll value and opacity
+                opacityVal = 1-(s / 150.0);
+            // opacity value 0% to 100%
+            $('.blurred-img').css('opacity', opacityVal);
+        });
+    </script>
+    <title>Liam Watson</title>
+
+</head>
+
+
+<body>
+
+
+<div class = "bg-image blurred-img"></div>
+<div class = "bg-image"></div>
+
+
+<div class = "bg-text">
+<p>
+    <h1>
+    Hi, i'm Liam.
+    </h1>
+    <img src ="assets/flower2.jpg" class = "portrait-image" alt = "Picture of me" >
+    <br>
+     <a href="https://github.com/Liam-Watson" class = "lock smallPadding">
+         <i class="fa fa-github fa-4x smallPadding icon-unlock"></i>
+         <i class="fa fa-github-square fa-4x smallPadding icon-lock"></i>
+     </a>
+     <a href = "https://www.linkedin.com/in/liamadamwatson" class ="lock smallPadding">
+         <i class="fa fa-linkedin fa-4x  icon-unlock"></i>
+         <i class="fa fa-linkedin-square fa-4x  icon-lock"></i>
+     </a>
+
+    <a href="mailto:liam@watson.org.za" class ="lock smallPadding">
+        <i class = "fa fa-envelope-o fa-4x smallPadding icon-unlock" ></i>
+        <i class = "fa fa-envelope-open fa-4x smallPadding icon-lock" ></i>
+    </a>
+</p>
+</div>
+<!--<i class = "fa fa-user-circle fa-5x lr-centred smallPadding"></i>-->
+<div class = "break">
+    I am a second year student in Cape Town. But, I don't just study course work my interests range far and wide;  from
+    Robotic's to web development and ML.
+</div>
+
+<div class = "uct-bg"></div>
+<h2 class = "uct-text">
+    Im studying at UCT
+</h2>
+<h3 class = "break-courses">
+    Some of the courses I have completed so far
+</h3>
+
+<div class = "col-1">
+    <h4 class = "big centered">First year:</h4>
+        <p class = "med centered">
+            <strong>Intro Computer Science:</strong> Python, programming fundamentals and algorithm design. <br><br>
+            <strong>Object Oriented Programming:</strong> Java with focus on OOP and Ethics <br>
+            <strong>Pure Mathematics 1:</strong> Basic set theory, Caculus 1 and 2, simple linear algebra and simple Complex Analysis <br>
+            <strong>Modelling & Applied Computing:</strong> Matlab, Octive, Probability, Differential Eqations, Estimation theory and Dimensional Analysis <br>
+            <strong>Dynamics:</strong> Vector Calculus, simple Complex Analysis, the Kepler Problem and Maxwell's Equations <br>
+            <strong>General Physics:</strong> Waves, Fluids, Torque, Electro-Magnetism, Circuits and more <br>
+        </p>
+
+</div>
+
+<div class = "col-2">
+    <h4 class = "centered big">Second Year:</h4>
+
+        <p class = "med centered">
+            <strong>Computer Science 2:</strong> Datastructures, RDB design, Graph theory <br>
+            <strong>Linear Algebra 2:</strong> The Eigen problem, Matrices, Vectors, Vector Spaces, Linear Transforms <br>
+            <strong>Advanced Calculus 2:</strong> Vector Calculus, Multi-variable Calculus <br>
+            <strong>Ordinary Differential Equations:</strong> Separable, Variation of Parameters, Bernoulli Equation, Riccati Equation, Exact Equations, Lagrange Equation,
+            The Clairaut Equation, Linear equation's of n'th order, linear Oscillators, non-linear Oscillators and singular perturbation theory, Laplace Transformations,
+            Systems of Differential equations, Series Solutions and 'Existence and Uniqueness of solutions' <br>
+            <strong>Numerical Analysis:</strong> Numerical Integration, Numerical differentiation, Polynomial Interpolation, Root Finding, Fixed Point Iteration, Richardson Extrapolation,
+            Numerical Methods for Solving ODE's <br>
+        </p>
+
+</div>
+<div class= "break2">
+
+</div>
+<div class = "accolades">
+    <h2 class = accoladesText>
+        I have a non-zero number of accolades
+    </h2>
+</div>
+<div class = "logo achievements centered">
+    <a href="https://mindsportsa.co.za/">
+    <span></span>
+    <img src = "assets/mssalogonew.png" alt="MSSA Logo" class ="image-centred">
+        </a>
+</div>
+<div>
+    <p class = "centred-achievements">
+        Captain of the South African DotA 2 team (Mind Sports South Africa)
+    </p>
+</div>
+<div class = "uctlogo achievements centered">
+    <a href="https://www.uct.ac.za">
+        <span></span>
+        <img src = "assets/UCTlogonew2.png" alt="UCT Logo" class ="image-centred">
+    </a>
+</div>
+<div>
+    <p class = "centred-achievements bottom-padding">
+        UCT Science Faculty Dean's Merit List 2019 <br>
+        UCT Science Faculty Scholarship 2020 <br>
+    </p>
+</div>
+
+<div class = "break-projects projects-bg">
+    <h2>
+        Some of my projects
+    </h2>
+</div>
+<div class = projects-div>
+
+    <div class = "ud-logo  centered">
+        <a href="https://github.com/Liam-Watson/UrbanBalderdash">
+            <img src = "assets/udlogonew.png" alt="UCT Logo">
+        </a>
+        <h3 class = "ud-title">
+            Urban Balderdash
+        </h3>
+    </div>
+    <div>
+        <p class = "centred-achievements ud-text">
+            A modern version of Balderdash using words from Urban Dictionary on iOS and Android, hopefully coming to browsers soon. <br>
+            The mobile development was done in dart using the flutter framework.
+        </p>
+    </div>
+
+
+
+    <div class = "avl-logo  centered">
+        <a href="https://github.com/Liam-Watson/UrbanBalderdash">
+            <img src = "assets/avllogo.png" alt="UCT Logo">
+        </a>
+        <h3 class = "ud-title">
+            AVL and BST Visualizer
+        </h3>
+    </div>
+    <div>
+        <p class = "centred-achievements avl-text">
+            A Java program which takes a large input of data and constructs a visualization of the tree structures that the data is stored in.
+        </p>
+    </div>
+
+
+</div>
+
+</body>
+</html>
