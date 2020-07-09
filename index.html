@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<!--    <link rel="manifest" href="assets/site.webmanifest">-->
     <script>
         $(window).scroll(function() {
             // Get scroll position
@@ -29,78 +33,58 @@
 
 <div class = "bg-text">
 <p>
-    <h1>
-    Hi, i'm Liam.
-    </h1>
+
     <img src ="assets/flower2.jpg" class = "portrait-image" alt = "Picture of me" >
+    <h1 style="color: #FFFFFF;
+font-size: 4vw;
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);">
+        Hi, i'm Liam.
+    </h1>
     <br>
-     <a href="https://github.com/Liam-Watson" class = "lock smallPadding">
+     <a target="_blank" href="https://github.com/Liam-Watson" class = "lock smallPadding">
          <i class="fa fa-github fa-4x smallPadding icon-unlock"></i>
          <i class="fa fa-github-square fa-4x smallPadding icon-lock"></i>
      </a>
-     <a href = "https://www.linkedin.com/in/liamadamwatson" class ="lock smallPadding">
+     <a target="_blank" href = "https://www.linkedin.com/in/liamadamwatson" class ="lock smallPadding">
          <i class="fa fa-linkedin fa-4x  icon-unlock"></i>
          <i class="fa fa-linkedin-square fa-4x  icon-lock"></i>
      </a>
 
-    <a href="mailto:liam@watson.org.za" class ="lock smallPadding">
+    <a target="_blank" href="mailto:liam@watson.org.za" class ="lock smallPadding">
         <i class = "fa fa-envelope-o fa-4x smallPadding icon-unlock" ></i>
         <i class = "fa fa-envelope-open fa-4x smallPadding icon-lock" ></i>
     </a>
 </p>
 </div>
-<!--<i class = "fa fa-user-circle fa-5x lr-centred smallPadding"></i>-->
 <div class = "break">
     I am a second year student in Cape Town. But, I don't just study course work my interests range far and wide;  from
     Robotic's to web development and ML.
 </div>
 
-<div class = "uct-bg"></div>
-<h2 class = "uct-text">
-    Im studying at UCT
-</h2>
-<h3 class = "break-courses">
-    Some of the courses I have completed so far
-</h3>
-
-<div class = "col-1">
-    <h4 class = "big centered">First year:</h4>
-        <p class = "med centered">
-            <strong>Intro Computer Science:</strong> Python, programming fundamentals and algorithm design. <br><br>
-            <strong>Object Oriented Programming:</strong> Java with focus on OOP and Ethics <br>
-            <strong>Pure Mathematics 1:</strong> Basic set theory, Caculus 1 and 2, simple linear algebra and simple Complex Analysis <br>
-            <strong>Modelling & Applied Computing:</strong> Matlab, Octive, Probability, Differential Eqations, Estimation theory and Dimensional Analysis <br>
-            <strong>Dynamics:</strong> Vector Calculus, simple Complex Analysis, the Kepler Problem and Maxwell's Equations <br>
-            <strong>General Physics:</strong> Waves, Fluids, Torque, Electro-Magnetism, Circuits and more <br>
-        </p>
-
+<div class = "uct-bg">
+    <h2 class = "uct-text">
+        Im studying at UCT
+    </h2>
 </div>
 
-<div class = "col-2">
-    <h4 class = "centered big">Second Year:</h4>
+<!--<h3 class = "break-courses">-->
+<!--    Some of the courses I have completed so far-->
+<!--</h3>-->
 
-        <p class = "med centered">
-            <strong>Computer Science 2:</strong> Datastructures, RDB design, Graph theory <br>
-            <strong>Linear Algebra 2:</strong> The Eigen problem, Matrices, Vectors, Vector Spaces, Linear Transforms <br>
-            <strong>Advanced Calculus 2:</strong> Vector Calculus, Multi-variable Calculus <br>
-            <strong>Ordinary Differential Equations:</strong> Separable, Variation of Parameters, Bernoulli Equation, Riccati Equation, Exact Equations, Lagrange Equation,
-            The Clairaut Equation, Linear equation's of n'th order, linear Oscillators, non-linear Oscillators and singular perturbation theory, Laplace Transformations,
-            Systems of Differential equations, Series Solutions and 'Existence and Uniqueness of solutions' <br>
-            <strong>Numerical Analysis:</strong> Numerical Integration, Numerical differentiation, Polynomial Interpolation, Root Finding, Fixed Point Iteration, Richardson Extrapolation,
-            Numerical Methods for Solving ODE's <br>
-        </p>
-
+<div style="text-align: center; padding: 20vw 0">
+    <button class="coursesButton" onclick="window.location.href='courses.html'">
+        Detailed Course Information
+    </button>
 </div>
-<div class= "break2">
 
-</div>
 <div class = "accolades">
     <h2 class = accoladesText>
-        I have a non-zero number of accolades
+        My accolades are non-zero
+<!--        I have a non-zero number of accolades-->
     </h2>
 </div>
 <div class = "logo achievements centered">
-    <a href="https://mindsportsa.co.za/">
+    <a target="_blank" href="https://mindsportsa.co.za/">
     <span></span>
     <img src = "assets/mssalogonew.png" alt="MSSA Logo" class ="image-centred">
         </a>
@@ -111,7 +95,7 @@
     </p>
 </div>
 <div class = "uctlogo achievements centered">
-    <a href="https://www.uct.ac.za">
+    <a target="_blank" href="https://www.uct.ac.za">
         <span></span>
         <img src = "assets/UCTlogonew2.png" alt="UCT Logo" class ="image-centred">
     </a>
@@ -123,16 +107,16 @@
     </p>
 </div>
 
-<div class = "break-projects projects-bg">
-    <h2>
+<div class = "break-projects projects-bg" style="padding-top: 6vw; padding-bottom: 6vw">
+    <h2 style="font-size: 8vw; ">
         Some of my projects
     </h2>
 </div>
 <div class = projects-div>
 
-    <div class = "ud-logo  centered">
-        <a href="https://github.com/Liam-Watson/UrbanBalderdash">
-            <img src = "assets/udlogonew.png" alt="UCT Logo">
+    <div class = "ud-logo  centered" style="padding-top: 10vw">
+        <a target="_blank" href="https://github.com/Liam-Watson/UrbanBalderdash">
+            <img src = "assets/udlogonewScaled.png" alt="UCT Logo">
         </a>
         <h3 class = "ud-title">
             Urban Balderdash
@@ -147,22 +131,75 @@
 
 
 
-    <div class = "avl-logo  centered">
-        <a href="https://github.com/Liam-Watson/UrbanBalderdash">
+    <div class = "avl-logo  centered" style="padding-top: 15vw">
+        <a target="_blank" href="https://github.com/Liam-Watson/AVL-BST-Visualizer">
             <img src = "assets/avllogo.png" alt="UCT Logo">
         </a>
-        <h3 class = "ud-title">
+        <h3 class = "avl-title">
             AVL and BST Visualizer
+        </h3>
+    </div>
+    <div >
+        <p class = "centred-achievements avl-text" >
+            A Java program which takes a large input of data and constructs a visualization of the tree structures that the data is stored in.
+        </p>
+    </div>
+    <div class = "avl-logo  centered" style="padding-top: 5vw">
+        <a target="_blank" href="https://liam-watson.github.io/logic-visualised/">
+            <i class="fa fa-code fa-10x"></i>
+        </a>
+        <h3 class = "avl-title">
+            Logic Visualised
         </h3>
     </div>
     <div>
         <p class = "centred-achievements avl-text">
-            A Java program which takes a large input of data and constructs a visualization of the tree structures that the data is stored in.
+            Still in the works but it aims to be a collection of many abstract mathematical and computer science concepts visualised.
+        </p>
+    </div>
+    <div class = "avl-logo  centered" style="padding-top: 5vw">
+        <a target="_blank" href="https://foresthills-knysna.co.za">
+            <img src="assets/forestHillsLogo.png">
+        </a>
+        <h3 class = "avl-title">
+            Forest Hills Website
+        </h3>
+    </div>
+    <div>
+        <p class = "centred-achievements avl-text">
+            Self Catering holiday accommodation website
+        </p>
+    </div>
+    <div class = "avl-logo  centered" style="padding-top: 5vw">
+        <a target="_blank" href="https://github.com/Liam-Watson/personalWebsite">
+            <i class="fa fa-user-circle fa-10x"></i>
+        </a>
+        <h3 class = "avl-title">
+            This Website...
+        </h3>
+    </div>
+    <div>
+        <p class = "centred-achievements avl-text">
+            Well, I thought it was pretty cool.
         </p>
     </div>
 
 
-</div>
 
+</div>
+<div style="text-align: center;padding-top: 6vw">
+    <p class="resume-text" style="padding-bottom: 10vw">
+        My resumé if you are interested
+    </p>
+    <a class="lock black" href="LiamWatson_CV.pdf">
+        <i class="fa fa-address-book-o fa-4x icon-unlock"></i>
+        <i class="fa fa-address-book fa-4x icon-lock"></i>
+    </a>
+
+</div>
+<div style="text-align: center">
+    Liam Watson
+    <i class="fa fa-copyright" style="color: black; padding-top: 8vw"></i>
+</div>
 </body>
 </html>

@@ -1,0 +1,120 @@
+
+.course-info{
+    text-align: center;
+    font-size: 3vw;
+    color: #444444;
+    /*background: #FFFFFF;*/
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+.course-name {
+    text-align: center;
+    font-size: 4vw;
+    color: #FFFFFF;
+    background: #ece9e9;
+    text-shadow: 3px 5px 2px #474747;
+}
+.backgroundColor{
+    background-color: #ece9e9;
+}
+.courses-title{
+    color: white;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 12px 7px 6px rgba(0,0,0,0);
+    font-size: 4vw;
+    padding-bottom: 4vw;
+    text-align: center;
+}
+
+.hover-shadow{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+/*.green-boarder{*/
+/*    border: 3px ridge rgba(38, 117, 5, 0.87);*/
+/*    border-radius: 27px;*/
+/*    !*-webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px #267505;*!*/
+/*    !*box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px #267505;*!*/
+/*    padding: 1vw;*/
+/*}*/
+#container1 p{
+    /*opacity: 0;*/
+}
+#container2 p{
+    /*opacity: 0;*/
+}
+#container3 p{
+    /*opacity: 0;*/
+}
+#container4 p{
+    /*opacity: 0;*/
+}
+#container5 p{
+    /*opacity: 0;*/
+}
+.pop-in{
+    -webkit-animation:bounce-in 1s ease-in-out 0s 1 normal;
+    -moz-animation:bounce-in 1s ease-in-out 0s 1 normal;
+    -ms-animation:bounce-in 1s ease-in-out 0s 1 normal;
+    animation:bounce-in 1s ease-in-out 0s 1 normal;
+}
+
+@-webkit-keyframes bounce-in {
+    0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+    50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+    70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+    100%{ -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
+}
+.flip-in{
+    animation-name: flip-vertical;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes flip-vertical {
+    /*0%{*/
+    /*    -webkit-transform: rotateY(0);*/
+    /*    transform: rotateY(0);*/
+    /*}*/
+    /*100%{*/
+    /*    -webkit-transform: rotateY(180deg);*/
+    /*    transform: rotateY(180deg);*/
+    /*}*/
+    0%{
+        -webkit-transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
+    }
+    50%{
+        -webkit-transform: scale(2.5) rotateY(90deg);
+        transform: scale(2.5) rotateY(90deg);
+    }
+    100%{
+        -webkit-transform: scale(1) rotateY(180deg);
+        transform: scale(1) rotateY(180deg);
+    }
+}
+.gradient-transition{
+    background: #ECE9E9;
+    padding-top: 100%;
+    background: -moz-linear-gradient(top, #ECE9E9 0%, #0E8DBC 100%);
+    background: -webkit-linear-gradient(top, #ECE9E9 0%, #0E8DBC 100%);
+    background: linear-gradient(to bottom, #ECE9E9 0%, #0E8DBC 100%);
+}
+.backgroundColor2{
+    background-color: #0E8DBC;
+
+}
+.course-info2{
+    text-align: center;
+    font-size: 3vw;
+    color: #ffffff;
+    text-shadow: 4px 3px 0px #7A7A7A, 2px 2px 0px rgba(0,0,0,0);
+}
